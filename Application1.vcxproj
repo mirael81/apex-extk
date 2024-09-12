@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0a67ed29-0e26-49d6-ba4e-ea28d7283de5}</ProjectGuid>
+    <RootNamespace>Application1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Apex V2</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath)freetype\include;C:\Users\1\Desktop\Xex Apex V2\freetype\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\1\Desktop\Xex Apex V2\Virtualizer;C:\Users\1\Desktop\Xex Apex V2\curl;C:\Users\1\Desktop\Xex Apex V2\auth;C:\Users\1\Desktop\Coding\Src\XEX\Xex Apex V2\Virtualizer;C:\Users\1\Desktop\Coding\Src\XEX\Xex Apex V2\freetype\include;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\curl;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\Json\include\nlohmann;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\Libmicrohttpd;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\freetype\include;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\Virtualizer\Via ASM module;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\auth;C:\Users\admin\Desktop\asd\Xex Apex V2\Driver;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VC_IncludePath)freetype\win64;C:\Users\1\Desktop\Xex Apex V2\Virtualizer;C:\Users\1\Desktop\Xex Apex V2\freetype\win64;C:\Users\1\Desktop\Xex Apex V2\auth;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;C:\Users\1\Desktop\Coding\Src\XEX\Xex Apex V2\Virtualizer;C:\Users\1\Desktop\Coding\Src\XEX\Xex Apex V2\freetype\win64;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\curl;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\Libmicrohttpd;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\freetype\win64;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\Virtualizer;C:\Users\1\Desktop\Coding\Src\XEX\Apex Ext V2\auth;$(LibraryPath)</LibraryPath>
+    <OutDir>xex</OutDir>
+    <TargetName>Boot Loader</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>freetype.lib;d3dx11.lib;d3d11.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application1.cpp" />
+    <ClCompile Include="Framework\data\imgui_freetype.cpp" />
+    <ClCompile Include="Framework\functional\base_elements.cpp" />
+    <ClCompile Include="Framework\functional\begin.cpp" />
+    <ClCompile Include="Framework\functional\begin_child.cpp" />
+    <ClCompile Include="Framework\functional\checkbox.cpp" />
+    <ClCompile Include="Framework\functional\color_picker.cpp" />
+    <ClCompile Include="Framework\functional\custom_draw.cpp" />
+    <ClCompile Include="Framework\functional\drag_slider.cpp" />
+    <ClCompile Include="Framework\functional\dropdown.cpp" />
+    <ClCompile Include="Framework\functional\esp_preview.cpp" />
+    <ClCompile Include="Framework\functional\hue_slider.cpp" />
+    <ClCompile Include="Framework\functional\keybind.cpp" />
+    <ClCompile Include="Framework\functional\selection.cpp" />
+    <ClCompile Include="Framework\gui.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="interface.cpp" />
+    <ClCompile Include="mapper\intel_driver.cpp" />
+    <ClCompile Include="mapper\kdmapper.cpp" />
+    <ClCompile Include="mapper\portable_executable.cpp" />
+    <ClCompile Include="mapper\service.cpp" />
+    <ClCompile Include="mapper\utils.cpp" />
+    <ClCompile Include="Overlay\Drawing\Draw.cpp" />
+    <ClCompile Include="Overlay\Overlay.cpp" />
+    <ClCompile Include="SDK\SDK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="auth\auth.hpp" />
+    <ClInclude Include="auth\skStr.h" />
+    <ClInclude Include="auth\utils.hpp" />
+    <ClInclude Include="auth\xorstr.h" />
+    <ClInclude Include="comms.h" />
+    <ClInclude Include="Config\Config.hpp" />
+    <ClInclude Include="Custom Radar\Webradar.hpp" />
+    <ClInclude Include="Framework\data\font.h" />
+    <ClInclude Include="Framework\data\imgui_freetype.h" />
+    <ClInclude Include="Framework\data\texture.h" />
+    <ClInclude Include="Framework\settings\elements.h" />
+    <ClInclude Include="Framework\settings\functions.h" />
+    <ClInclude Include="Framework\settings\settings.h" />
+    <ClInclude Include="Framework\settings\variables.h" />
+    <ClInclude Include="Framework\shader\blur.hpp" />
+    <ClInclude Include="Framework\shader\pshader.hpp" />
+    <ClInclude Include="freetype\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="freetype\include\freetype\config\ftheader.h" />
+    <ClInclude Include="freetype\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="freetype\include\freetype\config\ftoption.h" />
+    <ClInclude Include="freetype\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="freetype\include\freetype\config\integer-types.h" />
+    <ClInclude Include="freetype\include\freetype\config\mac-support.h" />
+    <ClInclude Include="freetype\include\freetype\config\public-macros.h" />
+    <ClInclude Include="freetype\include\freetype\freetype.h" />
+    <ClInclude Include="freetype\include\freetype\ftadvanc.h" />
+    <ClInclude Include="freetype\include\freetype\ftbbox.h" />
+    <ClInclude Include="freetype\include\freetype\ftbdf.h" />
+    <ClInclude Include="freetype\include\freetype\ftbitmap.h" />
+    <ClInclude Include="freetype\include\freetype\ftbzip2.h" />
+    <ClInclude Include="freetype\include\freetype\ftcache.h" />
+    <ClInclude Include="freetype\include\freetype\ftchapters.h" />
+    <ClInclude Include="freetype\include\freetype\ftcid.h" />
+    <ClInclude Include="freetype\include\freetype\ftcolor.h" />
+    <ClInclude Include="freetype\include\freetype\ftdriver.h" />
+    <ClInclude Include="freetype\include\freetype\fterrdef.h" />
+    <ClInclude Include="freetype\include\freetype\fterrors.h" />
+    <ClInclude Include="freetype\include\freetype\ftfntfmt.h" />
+    <ClInclude Include="freetype\include\freetype\ftgasp.h" />
+    <ClInclude Include="freetype\include\freetype\ftglyph.h" />
+    <ClInclude Include="freetype\include\freetype\ftgxval.h" />
+    <ClInclude Include="freetype\include\freetype\ftgzip.h" />
+    <ClInclude Include="freetype\include\freetype\ftimage.h" />
+    <ClInclude Include="freetype\include\freetype\ftincrem.h" />
+    <ClInclude Include="freetype\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="freetype\include\freetype\ftlist.h" />
+    <ClInclude Include="freetype\include\freetype\ftlogging.h" />
+    <ClInclude Include="freetype\include\freetype\ftlzw.h" />
+    <ClInclude Include="freetype\include\freetype\ftmac.h" />
+    <ClInclude Include="freetype\include\freetype\ftmm.h" />
+    <ClInclude Include="freetype\include\freetype\ftmodapi.h" />
+    <ClInclude Include="freetype\include\freetype\ftmoderr.h" />
+    <ClInclude Include="freetype\include\freetype\ftotval.h" />
+    <ClInclude Include="freetype\include\freetype\ftoutln.h" />
+    <ClInclude Include="freetype\include\freetype\ftparams.h" />
+    <ClInclude Include="freetype\include\freetype\ftpfr.h" />
+    <ClInclude Include="freetype\include\freetype\ftrender.h" />
+    <ClInclude Include="freetype\include\freetype\ftsizes.h" />
+    <ClInclude Include="freetype\include\freetype\ftsnames.h" />
+    <ClInclude Include="freetype\include\freetype\ftstroke.h" />
+    <ClInclude Include="freetype\include\freetype\ftsynth.h" />
+    <ClInclude Include="freetype\include\freetype\ftsystem.h" />
+    <ClInclude Include="freetype\include\freetype\fttrigon.h" />
+    <ClInclude Include="freetype\include\freetype\fttypes.h" />
+    <ClInclude Include="freetype\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="freetype\include\freetype\otsvg.h" />
+    <ClInclude Include="freetype\include\freetype\t1tables.h" />
+    <ClInclude Include="freetype\include\freetype\ttnameid.h" />
+    <ClInclude Include="freetype\include\freetype\tttables.h" />
+    <ClInclude Include="freetype\include\freetype\tttags.h" />
+    <ClInclude Include="freetype\include\ft2build.h" />
+    <ClInclude Include="Hacks\Aimbot.hpp" />
+    <ClInclude Include="Hacks\Bhop.hpp" />
+    <ClInclude Include="Hacks\Cacha.hpp" />
+    <ClInclude Include="Hacks\Esp.hpp" />
+    <ClInclude Include="Hacks\FastFire.hpp" />
+    <ClInclude Include="Hacks\Glow.hpp" />
+    <ClInclude Include="Hacks\HitLog.hpp" />
+    <ClInclude Include="Hacks\Loot.hpp" />
+    <ClInclude Include="Hacks\Misc.hpp" />
+    <ClInclude Include="Hacks\Player.hpp" />
+    <ClInclude Include="Hacks\Psilent.hpp" />
+    <ClInclude Include="ida\r5apex.exe.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="img\Ammo\EnergyAmmobytes.h" />
+    <ClInclude Include="img\Ammo\HeavyAmmobytes.h" />
+    <ClInclude Include="img\Ammo\LightAmmobytes.h" />
+    <ClInclude Include="img\Ammo\ShotgunAmmobytes.h" />
+    <ClInclude Include="img\Ammo\SniperAmmobytes.h" />
+    <ClInclude Include="img\Armor\Common Armor Bytes.h" />
+    <ClInclude Include="img\Armor\Helmetbytes.h" />
+    <ClInclude Include="img\Armor\Legendary Armor Bytes.h" />
+    <ClInclude Include="img\Armor\Mythic Armor Bytes.h" />
+    <ClInclude Include="img\Armor\Rare Armor Bytes.h" />
+    <ClInclude Include="img\Armor\Uncommon Armor Bytes.h" />
+    <ClInclude Include="img\Cartoon\EKitten.h" />
+    <ClInclude Include="img\Cartoon\Peter_Griffen.h" />
+    <ClInclude Include="img\Meds\evo-cache bytes.h" />
+    <ClInclude Include="img\Meds\Med-Kit bytes.h" />
+    <ClInclude Include="img\Meds\Med-Small bytes.h" />
+    <ClInclude Include="img\Meds\phynix bytes.h" />
+    <ClInclude Include="img\Meds\Shield-Large bytes.h" />
+    <ClInclude Include="img\Meds\Shield-Small bytes.h" />
+    <ClInclude Include="img\Weapons\Energy\EMG bytes.h" />
+    <ClInclude Include="img\Weapons\Energy\Havoc bytes.h" />
+    <ClInclude Include="img\Weapons\Energy\Nemisis bytes.h" />
+    <ClInclude Include="img\Weapons\Energy\Triple bytes.h" />
+    <ClInclude Include="img\Weapons\Energy\Volt Bytes.h" />
+    <ClInclude Include="img\Weapons\Pistol\alternator bytes.h" />
+    <ClInclude Include="img\Weapons\Pistol\p2020 bytes.h" />
+    <ClInclude Include="img\Weapons\Pistol\re45 bytes.h" />
+    <ClInclude Include="img\Weapons\Pistol\wingmen bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\car bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Carbine bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Flatline bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Hemlok bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Prowler bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Rampage bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Repeater bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\scout bytes.h" />
+    <ClInclude Include="img\Weapons\Rifle\Spit-Fire bytes.h" />
+    <ClInclude Include="img\Weapons\Shotgun\eva_8_auto bytes.h" />
+    <ClInclude Include="img\Weapons\Shotgun\mastiff bytes.h" />
+    <ClInclude Include="img\Weapons\Shotgun\mozambique bytes.h" />
+    <ClInclude Include="img\Weapons\Shotgun\peacekeeper bytes.h" />
+    <ClInclude Include="img\Weapons\sniper\ChargedRifle bytes.h" />
+    <ClInclude Include="img\Weapons\sniper\DMR bytes.h" />
+    <ClInclude Include="img\Weapons\sniper\Sentinel bytes.h" />
+    <ClInclude Include="img\Weapons\Special\Bow bytes.h" />
+    <ClInclude Include="img\Weapons\Special\Devotion bytes.h" />
+    <ClInclude Include="img\Weapons\Special\Knife bytes.h" />
+    <ClInclude Include="img\Weapons\Special\Kraber bytes.h" />
+    <ClInclude Include="img\Weapons\Special\R99 bytes.h" />
+    <ClInclude Include="interface.h" />
+    <ClInclude Include="mapper\intel_driver.hpp" />
+    <ClInclude Include="mapper\intel_driver_resource.hpp" />
+    <ClInclude Include="mapper\kdmapper.hpp" />
+    <ClInclude Include="mapper\nt.hpp" />
+    <ClInclude Include="mapper\portable_executable.hpp" />
+    <ClInclude Include="mapper\service.hpp" />
+    <ClInclude Include="mapper\skCrypter.h" />
+    <ClInclude Include="mapper\utils.hpp" />
+    <ClInclude Include="Overlay\Drawing\Draw.hpp" />
+    <ClInclude Include="Overlay\Fonts\Russian.hpp" />
+    <ClInclude Include="Overlay\Overlay.hpp" />
+    <ClInclude Include="protection\antiDbg.h" />
+    <ClInclude Include="protection\anti_vm.h" />
+    <ClInclude Include="protection\bad_process.h" />
+    <ClInclude Include="protection\lazy.h" />
+    <ClInclude Include="protection\skCrypt.h" />
+    <ClInclude Include="protection\spoof.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SDK\SDK.hpp" />
+    <ClInclude Include="Thread\Thread.hpp" />
+    <ClInclude Include="utils\Features.hpp" />
+    <ClInclude Include="utils\includes.h" />
+    <ClInclude Include="utils\offsets.hpp" />
+    <ClInclude Include="utils\Rol.hpp" />
+    <ClInclude Include="utils\Vector.hpp" />
+    <ClInclude Include="utils\xor.hpp" />
+    <ClInclude Include="Virtualizer\StealthCodeArea.h" />
+    <ClInclude Include="Virtualizer\StealthCodeArea_Max.h" />
+    <ClInclude Include="Virtualizer\Via ASM module\VirtualizerSDKCustomVMsMacros.h" />
+    <ClInclude Include="Virtualizer\Via ASM module\VirtualizerSDKMacros.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_BorlandC_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_CustomVMs.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_CustomVMs_BorlandC_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_CustomVMs_GNU_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_CustomVMs_ICL_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_CustomVMs_LCC_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_CustomVMs_VC_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_GNU_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_ICL_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_LCC_inline.h" />
+    <ClInclude Include="Virtualizer\VirtualizerSDK_VC_inline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="auth\libcurl.lib" />
+    <Library Include="auth\library_x64.lib" />
+    <Library Include="freetype\win64\freetype.lib" />
+    <Library Include="Virtualizer\VirtualizerSDK64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Bootstrap.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon1.ico" />
+    <Image Include="img\Ammo\EnergyAmmo.png" />
+    <Image Include="img\Ammo\HeavyAmmo.png" />
+    <Image Include="img\Ammo\LightAmmo.png" />
+    <Image Include="img\Ammo\ShotgunAmmo.png" />
+    <Image Include="img\Ammo\SniperAmmo.png" />
+    <Image Include="img\Armor\Apex Armor Template.png" />
+    <Image Include="img\Armor\Common Armor.png" />
+    <Image Include="img\Armor\Helmet.png" />
+    <Image Include="img\Armor\Legendary Armor.png" />
+    <Image Include="img\Armor\Mythic Armor.png" />
+    <Image Include="img\Armor\Rare Armor.png" />
+    <Image Include="img\Armor\Uncommon Armor.png" />
+    <Image Include="img\Meds\evo-cache.png" />
+    <Image Include="img\Meds\Med-Kit.png" />
+    <Image Include="img\Meds\Med-Small.png" />
+    <Image Include="img\Meds\phynix.png" />
+    <Image Include="img\Meds\Shield-Large.png" />
+    <Image Include="img\Meds\Shield-Small.png" />
+    <Image Include="img\Weapons\Energy\EMG.png" />
+    <Image Include="img\Weapons\Energy\Havoc.png" />
+    <Image Include="img\Weapons\Energy\Nemisis.png" />
+    <Image Include="img\Weapons\Energy\Triple.png" />
+    <Image Include="img\Weapons\Energy\Volt.png" />
+    <Image Include="img\Weapons\Pistol\alternator.png" />
+    <Image Include="img\Weapons\Pistol\p2020.png" />
+    <Image Include="img\Weapons\Pistol\re45.png" />
+    <Image Include="img\Weapons\Pistol\wingmen.png" />
+    <Image Include="img\Weapons\Rifle\car.png" />
+    <Image Include="img\Weapons\Rifle\Carbine.png" />
+    <Image Include="img\Weapons\Rifle\Flatline.png" />
+    <Image Include="img\Weapons\Rifle\Hemlok.png" />
+    <Image Include="img\Weapons\Rifle\Prowler.png" />
+    <Image Include="img\Weapons\Rifle\Rampage.png" />
+    <Image Include="img\Weapons\Rifle\Repeater.png" />
+    <Image Include="img\Weapons\Rifle\scout.png" />
+    <Image Include="img\Weapons\Rifle\Spit-Fire.png" />
+    <Image Include="img\Weapons\Shotgun\eva_8_auto.png" />
+    <Image Include="img\Weapons\Shotgun\mastiff.png" />
+    <Image Include="img\Weapons\Shotgun\mozambique.png" />
+    <Image Include="img\Weapons\Shotgun\peacekeeper.png" />
+    <Image Include="img\Weapons\sniper\ChargedRifle.png" />
+    <Image Include="img\Weapons\sniper\DMR.png" />
+    <Image Include="img\Weapons\sniper\Sentinel.png" />
+    <Image Include="img\Weapons\Special\Bow.png" />
+    <Image Include="img\Weapons\Special\Devotion.png" />
+    <Image Include="img\Weapons\Special\Knife.png" />
+    <Image Include="img\Weapons\Special\Kraber.png" />
+    <Image Include="img\Weapons\Special\R99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Virtualizer\Via ASM module\How to add ASM files in your Solution.pdf" />
+    <None Include="Virtualizer\Via ASM module\VirtualizerSDKCustomVmMacros.asm" />
+    <None Include="Virtualizer\Via ASM module\VirtualizerSDKMacros.asm" />
+    <None Include="Virtualizer\VirtualizerSDK64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Virtualizer\Via ASM module\Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
